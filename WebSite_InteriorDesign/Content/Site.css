@@ -1,0 +1,246 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    background-color: white;
+}
+
+
+
+a {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Abhaya Libre', Abhaya Libre;
+}
+
+.body-content, .container.body-content {
+    padding-top: 230px;
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0px 20px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo .img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+.navbar ul {
+    display: flex
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 35px;
+}
+
+navbar ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-logo {
+    display: inline-block;
+    left: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+    padding-top: 2px;
+}
+
+    .navbar-logo img {
+        height: 50px !important;
+        width: auto;
+    }
+
+.navbar-right {
+    float: right !important;
+    text-align: right;
+}
+
+.navbar-social-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-bottom: 5px;
+}
+
+
+
+.navbar-nav > li {
+    float: none;
+    display: inline-block;
+}
+
+.navbar-nav {
+    display: inline-block;
+}
+
+.navbar-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    position: relative;
+    max-width: 1400px;
+    margin: -15px auto;
+}
+
+.navbar-left-group,
+.navbar-right-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0 5px;
+    padding: 0;
+}
+
+.navbar-logo-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    min-width: 100px;
+}
+
+.navbar-logo img {
+    height: 150px !important;
+    width: auto;
+    display: block;
+}
+
+.navbar-right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 1;
+    padding: 15px 0 15px 0;
+    margin-left: 0;
+}
+
+.navbar-social-icons {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    color: black;
+    font-size: 1.5em;
+    transition: transform 0.2s, filter 0.2s, color 0.2s;
+}
+
+    .social-icon:hover {
+        color: #fff;
+        transform: scale(1.18);
+        filter: drop-shadow(0 2px 8px rgba(0,0,0,0.25));
+        transition: transform 0.2s, filter 0.2s, color 0.2s;
+    }
+
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+    .navbar-nav > li {
+        float: none;
+        display: inline-block;
+    }
+
+.background-main {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../Content/images/Background_1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+@media (max-width: 900px) {
+    .navbar-logo img {
+        height: 60px !important;
+    }
+    .navbar-left-group, .navbar-right-group {
+        gap: 10px;
+        margin: 0 5px;
+    }
+    .navbar-logo-center {
+        min-width: 100px;
+    }
+}
+
+.social-icons-vertical {
+    position: fixed;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    z-index: 200;
+}
+
+.social-icons-vertical .social-icon {
+    font-size: 2em;
+}
+
+.navbar-left-group li a,
+.navbar-right-group li a {
+    transition: transform 0.2s, filter 0.2s, color 0.2s, box-shadow 0.2s, background 0.2s;
+    border-radius: 17px;
+    padding: 6px 10px;
+    display: inline-block;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.navbar-left-group li a:hover,
+.navbar-right-group li a:hover {
+    color: #fff;
+    background: transparent;
+    transform: scale(1.10);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.10));
+}
+
+.intro-box {
+    background: rgba(255, 255, 255, 0.60);
+    padding: 32px 36px;
+    border-radius: 22px;
+    max-width: 700px;
+    margin: 48px 0 0 48px;
+    box-shadow: inset -13px 20px 20px 20px rgba(0,0,0,0.10);
+}
+
+.intro-box h1, .intro-box p {
+    color: #222;
+    text-align: left;
+    margin-bottom: 12px;
+}

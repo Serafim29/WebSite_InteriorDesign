@@ -1,0 +1,27 @@
+﻿<nav>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container navbar-flex" style="justify-content: center;">
+            <ul class="nav navbar-nav navbar-left-group">
+                <li>@Html.ActionLink("Acasă", "Index", "Home")</li>
+                <li>@Html.ActionLink("Portofoliu", "Portfolio", "Home")</li>
+                <li>@Html.ActionLink("Servicii", "Services", "Home")</li>
+            </ul>
+            <div class="navbar-logo-center">
+                <a class="navbar-logo" href="@Url.Action("Index", "Home")">
+                    <img src="~/Content/images/Black_logo.png" alt="Logo" />
+                </a>
+            </div>
+            <ul class="nav navbar-nav navbar-right-group">
+                <li>@Html.ActionLink("Despre noi", "About", "Home")</li>
+                <li>@Html.ActionLink("Contacte", "Contact", "Home")</li>
+                <li>@Html.ActionLink("Logare", "Login", "Home")</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="social-icons-vertical">
+    <a href="https://instagram.com/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+    <a href="https://tiktok.com/" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+    <a href="https://facebook.com/" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+</div>
